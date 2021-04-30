@@ -12,7 +12,8 @@ public class ReverseOfGivenNumber {
 			int anum = num;
 			int rev = 0;
 			while(num != 0) {
-				rev = rev * 10 + num %10;
+				int r = num % 10;
+				rev = rev * 10 + r;
 				num /=10;
 			}
 			System.out.println("Reverse of "+anum+" "+rev);
